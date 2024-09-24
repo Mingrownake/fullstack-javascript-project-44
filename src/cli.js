@@ -1,6 +1,8 @@
-import readline from 'readline-sync'
+import readline from 'readline-sync';
 
-export const requestName = () => {
-    const rsl = readline.question("May I have your name? ");
-    return rsl
-}
+const requestName = () => {
+  const rsl = readline.question('May I have your name? ');
+  return rsl;
+};
+
+export default requestName;
