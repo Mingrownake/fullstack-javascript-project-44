@@ -5,4 +5,4 @@
 
 ### Brain-even
 
-Demo:
+[Демонстрация работы](https://asciinema.org/a/SmKt4sfo7D5GAYtLf2UHwXTKj)
