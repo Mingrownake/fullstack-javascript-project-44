@@ -4,7 +4,8 @@ import {
 
 const calculateGCD = (firstNumber, secondNumber) => {
   let rsl = 1;
-  for (let index = 1; index < firstNumber + 1; index++) {
+  const minNumber = firstNumber <= secondNumber ? firstNumber : secondNumber;
+  for (let index = 1; index < minNumber + 1; index++) {
     if (firstNumber % index === 0 && secondNumber % index === 0) {
       rsl = index;
     }
