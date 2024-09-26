@@ -2,4 +2,4 @@
 
 import greeting from '../src/ganes/cli.js';
 
-const name = greeting();
+greeting();

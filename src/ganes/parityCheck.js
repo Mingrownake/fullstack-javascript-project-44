@@ -1,17 +1,16 @@
-import { greeting, rule, getAnswer, isCorrectAnswer, countAttempts } from "../index.js";
+import {
+  greeting, rule, getAnswer, isCorrectAnswer, countAttempts, getRandomInt,
+} from '../index.js';
 
-const maxNumber = 100;
-
-const getRandomInt = () => Math.floor(Math.random() * maxNumber);
-
-const check = () => {
-  const name = greeting()
+const run = () => {
+  const name = greeting();
+  const maxNumber = 100;
   rule('Answer "yes" if the number is even, otherwise answer "no".');
   let rsl = true;
   for (let index = 0; index < countAttempts; index++) {
-    const number = getRandomInt();
-    const correctAnswer = number % 2 === 0 ? 'yes' : 'no';
+    const number = getRandomInt(maxNumber);
     const answer = getAnswer(number);
+    const correctAnswer = number % 2 === 0 ? 'yes' : 'no';
     rsl = isCorrectAnswer(answer, correctAnswer, name);
     if (!rsl) break;
   }
@@ -20,4 +19,4 @@ const check = () => {
   }
 };
 
-export default check;
+export default run;

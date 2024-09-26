@@ -6,3 +6,8 @@
 ### Brain-even
 
 [Демонстрация работы](https://asciinema.org/a/SmKt4sfo7D5GAYtLf2UHwXTKj)
+
+
+### Brain-calc
+
+[Демонстрация работы](https://asciinema.org/a/nL9cLxbHlJJi63tBYQHBOZLR5)

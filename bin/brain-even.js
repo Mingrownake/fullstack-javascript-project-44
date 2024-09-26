@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import check from '../src/ganes/parityCheck.js';
+import run from '../src/ganes/parityCheck.js';
 
-check();
+run();
