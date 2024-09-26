@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import requestName from '../src/cli.js';
+import greeting from '../src/ganes/cli.js';
 
-console.log('Welcome to the Brain Games!');
-const name = requestName();
-console.log(`Hello, ${name}`);
+const name = greeting();
