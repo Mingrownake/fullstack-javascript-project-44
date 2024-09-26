@@ -11,3 +11,7 @@
 ### Brain-calc
 
 [Демонстрация работы](https://asciinema.org/a/nL9cLxbHlJJi63tBYQHBOZLR5)
+
+### Brain-gcd
+
+[Демонстрация работы](https://asciinema.org/a/1LTXKiq9qyFiiP9ACnMVdLMM7)

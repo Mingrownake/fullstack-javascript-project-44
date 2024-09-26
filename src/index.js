@@ -2,7 +2,7 @@ import readline from 'readline-sync';
 
 export const countAttempts = 3;
 
-export const getRandomInt = (max) => Math.floor(Math.random() * max);
+export const getRandomInt = (max) => Math.floor(Math.random() * max) + 1;
 
 export const greeting = () => {
   console.log('Welcome to the Brain Games!');

@@ -2,13 +2,6 @@ import {
   greeting, rule, getAnswer, isCorrectAnswer, countAttempts, getRandomInt,
 } from '../index.js';
 
-const calculation = (firstNumber, secondNumber) => {
-  const operations = ['-', '+', '*'];
-  const selectOperation = operations[getRandomInt(operations.length)];
-  const correctAnswer = calculateCorrectAnswer(firstNumber, secondNumber, selectOperation);
-  return [selectOperation, correctAnswer];
-};
-
 const calculateCorrectAnswer = (firstNumber, secondNumber, selectOperation) => {
   let rsl = 0;
   switch (selectOperation) {
@@ -25,6 +18,13 @@ const calculateCorrectAnswer = (firstNumber, secondNumber, selectOperation) => {
       break;
   }
   return rsl;
+};
+
+const calculation = (firstNumber, secondNumber) => {
+  const operations = ['-', '+', '*'];
+  const selectOperation = operations[getRandomInt(operations.length)];
+  const correctAnswer = calculateCorrectAnswer(firstNumber, secondNumber, selectOperation);
+  return [selectOperation, correctAnswer];
 };
 
 const run = () => {
