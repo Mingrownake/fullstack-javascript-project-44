@@ -3,7 +3,7 @@ import * as general from '../index.js';
 const calculateGCD = (firstNumber, secondNumber) => {
   let rsl = 1;
   const minNumber = firstNumber <= secondNumber ? firstNumber : secondNumber;
-  for (let index = 1; index < minNumber + 1; index++) {
+  for (let index = 1; index < minNumber + 1; index += 1) {
     if (firstNumber % index === 0 && secondNumber % index === 0) {
       rsl = index;
     }
@@ -16,7 +16,7 @@ const run = () => {
   const name = general.greeting();
   general.rule('Find the greatest common divisor of given numbers.');
   let rsl = true;
-  for (let index = 0; index < general.countAttempts; index++) {
+  for (let index = 0; index < general.countAttempts; index += 1) {
     const firstNumber = general.getRandomInt(maxNumber);
     const secondNumber = general.getRandomInt(maxNumber);
     const answer = Number(general.getAnswer(`${firstNumber} ${secondNumber}`));

@@ -21,7 +21,7 @@ const generateStartNumber = () => {
 const generateSequence = (length, start, step) => {
   const items = [];
   let currentNumber = start;
-  for (let index = 0; index < length; index++) {
+  for (let index = 0; index < length; index += 1) {
     items.push(currentNumber);
     currentNumber += step;
   }
@@ -44,7 +44,7 @@ const run = () => {
   const name = general.greeting();
   general.rule('What number is missing in the progression?');
   let rsl = true;
-  for (let i = 0; i < general.countAttempts; i++) {
+  for (let i = 0; i < general.countAttempts; i += 1) {
     const [correctAnswer, items] = generateCorrectAnswer();
     const answer = Number(general.getAnswer(items));
     rsl = general.isCorrectAnswer(answer, correctAnswer, name);

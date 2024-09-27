@@ -2,7 +2,7 @@ import * as general from '../index.js';
 
 const isPrimeNumber = (number) => {
   let rsl = true;
-  for (let index = 2; index < number; index++) {
+  for (let index = 2; index < number; index += 1) {
     if (number % index === 0) {
       rsl = false;
       break;
@@ -15,7 +15,7 @@ const run = () => {
   const name = general.greeting();
   general.rule('Answer "yes" if given number is prime. Otherwise answer "no".');
   let rsl = true;
-  for (let index = 0; index < general.countAttempts; index++) {
+  for (let index = 0; index < general.countAttempts; index += 1) {
     const number = general.getRandomInt(100);
     const correctAnswer = isPrimeNumber(number) ? 'yes' : 'no';
     const answer = general.getAnswer(number).toLowerCase();

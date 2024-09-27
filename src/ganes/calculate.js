@@ -30,7 +30,7 @@ const run = () => {
   const name = general.greeting();
   general.rule('What is the result of the expression?');
   let rsl = true;
-  for (let index = 0; index < general.countAttempts; index++) {
+  for (let index = 0; index < general.countAttempts; index += 1) {
     const firstNumber = general.getRandomInt(maxNumber);
     const secondNumber = general.getRandomInt(maxNumber);
     const [selectOperation, correctAnswer] = calculation(firstNumber, secondNumber);
