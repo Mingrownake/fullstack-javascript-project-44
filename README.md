@@ -18,3 +18,7 @@
 ### Brain-progression
 
 [Демонстрация работы](https://asciinema.org/a/3iwZPav4Wh3j2k96QYjCqBkle)
+
+###
+
+[Демонстрация работы](https://asciinema.org/a/xSOZ8bdBhTAUWJ9a2MFjHkSjt)
