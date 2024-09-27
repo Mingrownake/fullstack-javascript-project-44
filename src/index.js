@@ -4,6 +4,8 @@ export const countAttempts = 3;
 
 export const getRandomInt = (max) => Math.floor(Math.random() * max) + 1;
 
+export const getLimitedInt = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+
 export const greeting = () => {
   console.log('Welcome to the Brain Games!');
   const name = readline.question('May I have your name? ');

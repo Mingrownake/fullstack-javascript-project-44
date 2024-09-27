@@ -7,7 +7,6 @@
 
 [Демонстрация работы](https://asciinema.org/a/SmKt4sfo7D5GAYtLf2UHwXTKj)
 
-
 ### Brain-calc
 
 [Демонстрация работы](https://asciinema.org/a/nL9cLxbHlJJi63tBYQHBOZLR5)
@@ -15,3 +14,7 @@
 ### Brain-gcd
 
 [Демонстрация работы](https://asciinema.org/a/1LTXKiq9qyFiiP9ACnMVdLMM7)
+
+### Brain-progression
+
+[Демонстрация работы](https://asciinema.org/a/3iwZPav4Wh3j2k96QYjCqBkle)

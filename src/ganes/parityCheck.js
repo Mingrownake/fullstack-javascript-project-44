@@ -1,17 +1,15 @@
-import {
-  greeting, rule, getAnswer, isCorrectAnswer, countAttempts, getRandomInt,
-} from '../index.js';
+import * as general from '../index.js';
 
 const run = () => {
-  const name = greeting();
+  const name = general.greeting();
   const maxNumber = 100;
-  rule('Answer "yes" if the number is even, otherwise answer "no".');
+  general.rule('Answer "yes" if the number is even, otherwise answer "no".');
   let rsl = true;
-  for (let index = 0; index < countAttempts; index++) {
-    const number = getRandomInt(maxNumber);
-    const answer = getAnswer(number);
+  for (let index = 0; index < general.countAttempts; index++) {
+    const number = general.getRandomInt(maxNumber);
+    const answer = general.getAnswer(number);
     const correctAnswer = number % 2 === 0 ? 'yes' : 'no';
-    rsl = isCorrectAnswer(answer, correctAnswer, name);
+    rsl = general.isCorrectAnswer(answer, correctAnswer, name);
     if (!rsl) break;
   }
   if (rsl) {
